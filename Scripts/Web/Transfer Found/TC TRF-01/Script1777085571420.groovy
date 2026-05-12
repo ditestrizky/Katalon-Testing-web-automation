@@ -16,18 +16,48 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.support.ui.Select	
 
 CustomKeywords.'common.WebHelper.login'('Haryadi01','qwerty123')
 //akses menu transfer
 WebUI.click(findTestObject('Web/Home/link_transfer'))
 
+def driver = DriverFactory.getWebDriver()
+def selectElementFrom = new Select(driver.findElement(By.cssSelector('#fromAccountId')))
+def selectElementTo = new Select(driver.findElement(By.cssSelector('#toAccountId')))
+
 WebUI.setText(findTestObject('Web/Transfer/txt_amount'),'150')
-WebUI.selectOptionByValue(findTestObject('Web/Transfer/drp_fromAccount'),'13788',false)
-WebUI.selectOptionByLabel(findTestObject('Web/Transfer/drp_toAccount'),'13899',false)
+
+List<WebElement> options = selectElementFrom.getOptions()
+options.each { option ->
+	println "Value: ${option.getAttribute('value')} — Label: ${option.getText()}"
+}
+
+def fromAccount = options.get(1).getAttribute('value')
+selectElementFrom.selectByValue(fromAccount)
+
+List<WebElement> optionsToAccount = selectElementTo.getOptions()
+optionsToAccount.each { option ->
+	println "Value: ${option.getAttribute('value')} — Label: ${option.getText()}"
+}
+
+def toAccount = optionsToAccount.get(2).getAttribute('value')
+selectElementTo.selectByValue(toAccount)
+
+
+
+//WebUI.selectOptionByValue(findTestObject('Web/Transfer/drp_fromAccount'),'13788',false) digunakan saat data hardcode
+//WebUI.selectOptionByLabel(findTestObject('Web/Transfer/drp_toAccount'),'13899',false) digunakan saat data hardcode
 WebUI.click(findTestObject('Web/Transfer/btn_submit'))
 
 WebUI.waitForElementPresent(findTestObject('Web/Transfer/lbl_successTransfer'),5)
 WebUI.verifyElementText(findTestObject('Web/Transfer/lbl_successTransfer'),'Transfer Complete!')
+WebUI.takeScreenshot(GlobalVariable.screenshotPath + 'TC TRF-01.png')
 
 
 WebUI.closeBrowser()

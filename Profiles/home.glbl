@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>home</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:\\Users\\Haryadi\\Katalon Studio\\Katalon-Testing-web-automation\\screenshot\\'</initValue>
+      <name>screenshotPath</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
