@@ -17,15 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement
-import org.openqa.selenium.By
-import org.openqa.selenium.WebElement
 import com.kms.katalon.core.webui.driver.DriverFactory
 import org.openqa.selenium.By
 import org.openqa.selenium.support.ui.Select	
 
 
 					
-CustomKeywords.'common.WebHelper.loginDummy'('john','demo')
+CustomKeywords.'common.WebHelper.login'('Haryadi01','qwerty123')
 
 WebUI.click(findTestObject('Web/Home/link_loan'))
 
@@ -40,7 +38,7 @@ options.each { option ->
     println "Value: ${option.getAttribute('value')} — Label: ${option.getText()}"
 }
 
-def firstValue = options.get(1).getAttribute('value')
+def firstValue = options.get(0).getAttribute('value')
 selectElement.selectByValue(firstValue)
 
 WebUI.click(findTestObject('Web/Loan/btn_submit'))
@@ -48,7 +46,7 @@ WebUI.click(findTestObject('Web/Loan/btn_submit'))
 WebUI.waitForElementPresent(findTestObject('Web/Loan/lbl_statusLoan'),5)
 WebUI.verifyElementText(findTestObject('Web/Loan/lbl_statusLoan'),'Approved')
 
-WebUI.takeScreenshot(GlobalVariable.screenshotPathHome + 'TC-01-Loan.png')
+WebUI.takeScreenshot(GlobalVariable.screenshotPath + 'TC-01-getLoan.png')
 
 WebUI.closeBrowser()
 println "TC-loan-01 Request loan Pass -Berhasil request loan"

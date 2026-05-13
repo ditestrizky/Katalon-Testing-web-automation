@@ -1,0 +1,185 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS-Web_Regession,Chrome 147.0.7727.138,,,13-05-2026 16:24:32,13-05-2026 16:26:31,1m - 59.379s,FAILED
+,,,,,,,
+Test Cases/Web/TC-03-Register_Valid,Chrome 147.0.7727.138,,,13-05-2026 16:24:33,13-05-2026 16:24:50,17.807s,PASSED
+"openBrowser(""https://parabank.parasoft.com"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:33,13-05-2026 16:24:39,5.699s,PASSED
+"click(findTestObject(""Web/Register/link_register""))",Chrome 147.0.7727.138,,,13-05-2026 16:24:39,13-05-2026 16:24:40,0.871s,PASSED
+"setText(findTestObject(""Web/Register/txt_firstname""), ""haryadi"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:40,13-05-2026 16:24:41,0.824s,PASSED
+"setText(findTestObject(""Web/Register/txt_lastname""), ""haryanto"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:41,13-05-2026 16:24:41,0.653s,PASSED
+"setText(findTestObject(""Web/Register/txt_address""), ""terin 1"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:41,13-05-2026 16:24:42,0.647s,PASSED
+"setText(findTestObject(""Web/Register/txt_city""), ""Depok"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:42,13-05-2026 16:24:43,0.650s,PASSED
+"setText(findTestObject(""Web/Register/txt_state""), ""ina"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:43,13-05-2026 16:24:43,0.652s,PASSED
+"setText(findTestObject(""Web/Register/txt_zipcode""), ""11450"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:43,13-05-2026 16:24:44,0.690s,PASSED
+"setText(findTestObject(""Web/Register/txt_phonenumber""), ""628527323222"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:44,13-05-2026 16:24:45,0.658s,PASSED
+"setText(findTestObject(""Web/Register/txt_ssn""), ""12321311"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:45,13-05-2026 16:24:45,0.656s,PASSED
+"setText(findTestObject(""Web/Register/txt_username""), ""Haryadi01"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:45,13-05-2026 16:24:46,0.692s,PASSED
+"setText(findTestObject(""Web/Register/txt_password""), ""qwerty123"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:46,13-05-2026 16:24:47,0.651s,PASSED
+"setText(findTestObject(""Web/Register/txt_confirmpassword""), ""qwerty123"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:47,13-05-2026 16:24:47,0.625s,PASSED
+"click(findTestObject(""Web/Register/btn_register""))",Chrome 147.0.7727.138,,,13-05-2026 16:24:47,13-05-2026 16:24:48,0.700s,PASSED
+"waitForElementPresent(findTestObject(""Web/Register/lbl_registerberhasil""), 5)",Chrome 147.0.7727.138,,,13-05-2026 16:24:48,13-05-2026 16:24:49,0.539s,PASSED
+"verifyElementVisible(findTestObject(""Web/Register/lbl_registerberhasil""))",Chrome 147.0.7727.138,,,13-05-2026 16:24:49,13-05-2026 16:24:49,0.330s,PASSED
+"value = getText(findTestObject(""Web/Register/lbl_registerberhasil""))",Chrome 147.0.7727.138,,,13-05-2026 16:24:49,13-05-2026 16:24:49,0.309s,PASSED
+"assert value.contains(""Welcome"") : ""Seharusnya kehalaman Pendaftaran berhasil!""",Chrome 147.0.7727.138,,,13-05-2026 16:24:49,13-05-2026 16:24:49,0.037s,PASSED
+"takeScreenshot(screenshotPath + ""TC-03-Register Valid.png"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:49,13-05-2026 16:24:50,0.637s,PASSED
+closeBrowser(),Chrome 147.0.7727.138,,,13-05-2026 16:24:50,13-05-2026 16:24:50,0.537s,PASSED
+"println(""TC-03-Register_Valid Pass - Register Valid berhasil!"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:50,13-05-2026 16:24:50,0.005s,PASSED
+,,,,,,,
+Test Cases/Web/TC-04-Register_Invalid,Chrome 147.0.7727.138,,,13-05-2026 16:24:50,13-05-2026 16:25:04,14.072s,PASSED
+"openBrowser(""https://parabank.parasoft.com"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:51,13-05-2026 16:24:54,3.635s,PASSED
+"click(findTestObject(""Web/Register/link_register""))",Chrome 147.0.7727.138,,,13-05-2026 16:24:54,13-05-2026 16:24:55,1.034s,PASSED
+"setText(findTestObject(""Web/Register/txt_firstname""), ""haryadi"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:55,13-05-2026 16:24:56,0.818s,PASSED
+"setText(findTestObject(""Web/Register/txt_lastname""), ""haryanto"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:56,13-05-2026 16:24:57,0.619s,PASSED
+"setText(findTestObject(""Web/Register/txt_address""), ""terin 1"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:57,13-05-2026 16:24:57,0.632s,PASSED
+"setText(findTestObject(""Web/Register/txt_city""), ""Depok"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:57,13-05-2026 16:24:58,0.614s,PASSED
+"setText(findTestObject(""Web/Register/txt_state""), ""ina"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:58,13-05-2026 16:24:59,0.634s,PASSED
+"setText(findTestObject(""Web/Register/txt_zipcode""), ""11450"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:59,13-05-2026 16:24:59,0.618s,PASSED
+"setText(findTestObject(""Web/Register/txt_phonenumber""), ""628527323222"")",Chrome 147.0.7727.138,,,13-05-2026 16:24:59,13-05-2026 16:25:00,0.636s,PASSED
+"setText(findTestObject(""Web/Register/txt_ssn""), ""12321311"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:00,13-05-2026 16:25:00,0.631s,PASSED
+"setText(findTestObject(""Web/Register/txt_username""), ""Haryadi01"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:00,13-05-2026 16:25:01,0.638s,PASSED
+"setText(findTestObject(""Web/Register/txt_password""), ""qwerty123"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:01,13-05-2026 16:25:02,0.628s,PASSED
+"setText(findTestObject(""Web/Register/txt_confirmpassword""), ""qwerty123"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:02,13-05-2026 16:25:02,0.591s,PASSED
+"click(findTestObject(""Web/Register/btn_register""))",Chrome 147.0.7727.138,,,13-05-2026 16:25:02,13-05-2026 16:25:03,0.651s,PASSED
+"waitForElementPresent(findTestObject(""Web/Register/lbl_failRegister""), 5)",Chrome 147.0.7727.138,,,13-05-2026 16:25:03,13-05-2026 16:25:03,0.401s,PASSED
+"verifyElementText(findTestObject(""Web/Register/lbl_failRegister""), ""This username already exists."")",Chrome 147.0.7727.138,,,13-05-2026 16:25:03,13-05-2026 16:25:04,0.283s,PASSED
+"takeScreenshot(screenshotPath + ""TC-04-Register Invalid.png"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:04,13-05-2026 16:25:04,0.397s,PASSED
+closeBrowser(),Chrome 147.0.7727.138,,,13-05-2026 16:25:04,13-05-2026 16:25:04,0.433s,PASSED
+"println(""TC-04-Register_Invalid Pass - Register Invalid berhasil!"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:04,13-05-2026 16:25:04,0.002s,PASSED
+,,,,,,,
+Test Cases/Web/TC-02-Login_Invalid,Chrome 147.0.7727.138,,,13-05-2026 16:25:04,13-05-2026 16:25:12,7.709s,PASSED
+"openBrowser(""https://parabank.parasoft.com"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:05,13-05-2026 16:25:08,3.711s,PASSED
+"setText(findTestObject(""Web/Login/txt_username""), ""john"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:08,13-05-2026 16:25:09,0.805s,PASSED
+"setText(findTestObject(""Web/Login/txt_password""), ""demo1"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:09,13-05-2026 16:25:10,0.626s,PASSED
+"click(findTestObject(""Web/Login/btn_login""))",Chrome 147.0.7727.138,,,13-05-2026 16:25:10,13-05-2026 16:25:10,0.638s,PASSED
+"waitForElementPresent(findTestObject(""Web/Login/lbl_faillogin""), 5)",Chrome 147.0.7727.138,,,13-05-2026 16:25:10,13-05-2026 16:25:11,0.535s,PASSED
+"verifyElementVisible(findTestObject(""Web/Login/lbl_faillogin""))",Chrome 147.0.7727.138,,,13-05-2026 16:25:11,13-05-2026 16:25:11,0.281s,PASSED
+"verifyElementText(findTestObject(""Web/Login/lbl_faillogin""), ""The username and password could not be verified."")",Chrome 147.0.7727.138,,,13-05-2026 16:25:11,13-05-2026 16:25:11,0.285s,PASSED
+currentUrl = getUrl(),Chrome 147.0.7727.138,,,13-05-2026 16:25:11,13-05-2026 16:25:12,0.024s,PASSED
+"assert currentUrl.contains(""login"") : ""Tetap dihalaman login!""",Chrome 147.0.7727.138,,,13-05-2026 16:25:12,13-05-2026 16:25:12,0.003s,PASSED
+"takeScreenshot(screenshotPath + ""TC-02-Login Invalid.png"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:12,13-05-2026 16:25:12,0.357s,PASSED
+closeBrowser(),Chrome 147.0.7727.138,,,13-05-2026 16:25:12,13-05-2026 16:25:12,0.299s,PASSED
+"println(""TC-02-Login_Invalid Pass - Login Invalid berhasil!"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:12,13-05-2026 16:25:12,0.002s,PASSED
+,,,,,,,
+Test Cases/Web/TC-01-Login_Valid,Chrome 147.0.7727.138,,,13-05-2026 16:25:12,13-05-2026 16:25:20,8.003s,PASSED
+"openBrowser(""https://parabank.parasoft.com"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:12,13-05-2026 16:25:16,3.872s,PASSED
+"setText(findTestObject(""Web/Login/txt_username""), ""Haryadi01"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:16,13-05-2026 16:25:17,0.775s,PASSED
+"setText(findTestObject(""Web/Login/txt_password""), ""qwerty123"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:17,13-05-2026 16:25:18,0.618s,PASSED
+"click(findTestObject(""Web/Login/btn_login""))",Chrome 147.0.7727.138,,,13-05-2026 16:25:18,13-05-2026 16:25:19,0.931s,PASSED
+"waitForElementPresent(findTestObject(""Web/Home/lbl_accountoverview""), 5)",Chrome 147.0.7727.138,,,13-05-2026 16:25:19,13-05-2026 16:25:19,0.710s,PASSED
+"verifyElementVisible(findTestObject(""Web/Home/lbl_accountoverview""))",Chrome 147.0.7727.138,,,13-05-2026 16:25:19,13-05-2026 16:25:20,0.286s,PASSED
+currentUrl = getUrl(),Chrome 147.0.7727.138,,,13-05-2026 16:25:20,13-05-2026 16:25:20,0.016s,PASSED
+"assert currentUrl.contains(""overview"") : ""Seharusnya kehalaman overview!""",Chrome 147.0.7727.138,,,13-05-2026 16:25:20,13-05-2026 16:25:20,0.002s,PASSED
+"takeScreenshot(screenshotPath + ""TC-01-Login Valid.png"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:20,13-05-2026 16:25:20,0.341s,PASSED
+closeBrowser(),Chrome 147.0.7727.138,,,13-05-2026 16:25:20,13-05-2026 16:25:20,0.319s,PASSED
+"println(""TC-1-Login_Valid Pass - Login Valid berhasil!"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:20,13-05-2026 16:25:20,0.002s,PASSED
+,,,,,,,
+Test Cases/Web/TC-Create New Account,Chrome 147.0.7727.138,,,13-05-2026 16:25:20,13-05-2026 16:25:31,11.197s,PASSED
+"common.WebHelper.login(""Haryadi01"", ""qwerty123"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:21,13-05-2026 16:25:26,5.890s,PASSED
+"click(findTestObject(""Web/Home/link_createAccount""))",Chrome 147.0.7727.138,,,13-05-2026 16:25:26,13-05-2026 16:25:28,1.109s,PASSED
+"selectOptionByValue(findTestObject(""Web/OpenAccount/drp_typeAccount""), ""1"", false)",Chrome 147.0.7727.138,,,13-05-2026 16:25:28,13-05-2026 16:25:29,1.008s,PASSED
+driver = getWebDriver(),Chrome 147.0.7727.138,,,13-05-2026 16:25:29,13-05-2026 16:25:29,0.009s,PASSED
+selectElement = new org.openqa.selenium.support.ui.Select(driver.findElement(org.openqa.selenium.By.cssSelector(#fromAccountId))),Chrome 147.0.7727.138,,,13-05-2026 16:25:29,13-05-2026 16:25:29,0.321s,PASSED
+options = selectElement.getOptions(),Chrome 147.0.7727.138,,,13-05-2026 16:25:29,13-05-2026 16:25:29,0.267s,PASSED
+options.each({ java.lang.Object option -> ... }),Chrome 147.0.7727.138,,,13-05-2026 16:25:29,13-05-2026 16:25:29,0.066s,PASSED
+"firstValue = get(0).getAttribute(""value"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:29,13-05-2026 16:25:29,0.018s,PASSED
+selectElement.selectByValue(firstValue),Chrome 147.0.7727.138,,,13-05-2026 16:25:29,13-05-2026 16:25:30,0.304s,PASSED
+"click(findTestObject(""Web/OpenAccount/btn_submit""))",Chrome 147.0.7727.138,,,13-05-2026 16:25:30,13-05-2026 16:25:30,0.352s,PASSED
+"verifyElementText(findTestObject(""Web/OpenAccount/lbl_successCreateAccount""), ""Account Opened!"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:30,13-05-2026 16:25:31,0.692s,PASSED
+"takeScreenshot(screenshotPath + ""TC CreateAccount.png"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:31,13-05-2026 16:25:31,0.354s,PASSED
+closeBrowser(),Chrome 147.0.7727.138,,,13-05-2026 16:25:31,13-05-2026 16:25:31,0.382s,PASSED
+"println(""Test Case Create Account success!"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:31,13-05-2026 16:25:31,0.001s,PASSED
+,,,,,,,
+Test Cases/Web/Transfer Found/TC TRF-01,Chrome 147.0.7727.138,,,13-05-2026 16:25:31,13-05-2026 16:25:44,13.020s,PASSED
+"common.WebHelper.login(""Haryadi01"", ""qwerty123"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:32,13-05-2026 16:25:38,6.671s,PASSED
+"click(findTestObject(""Web/Home/link_transfer""))",Chrome 147.0.7727.138,,,13-05-2026 16:25:38,13-05-2026 16:25:39,1.108s,PASSED
+driver = getWebDriver(),Chrome 147.0.7727.138,,,13-05-2026 16:25:39,13-05-2026 16:25:39,0.006s,PASSED
+selectElementFrom = new org.openqa.selenium.support.ui.Select(driver.findElement(org.openqa.selenium.By.cssSelector(#fromAccountId))),Chrome 147.0.7727.138,,,13-05-2026 16:25:39,13-05-2026 16:25:40,0.732s,PASSED
+selectElementTo = new org.openqa.selenium.support.ui.Select(driver.findElement(org.openqa.selenium.By.cssSelector(#toAccountId))),Chrome 147.0.7727.138,,,13-05-2026 16:25:40,13-05-2026 16:25:41,0.286s,PASSED
+"setText(findTestObject(""Web/Transfer/txt_amount""), ""150"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:41,13-05-2026 16:25:41,0.616s,PASSED
+options = selectElementFrom.getOptions(),Chrome 147.0.7727.138,,,13-05-2026 16:25:41,13-05-2026 16:25:41,0.257s,PASSED
+options.each({ java.lang.Object option -> ... }),Chrome 147.0.7727.138,,,13-05-2026 16:25:41,13-05-2026 16:25:41,0.054s,PASSED
+"fromAccount = get(0).getAttribute(""value"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:41,13-05-2026 16:25:41,0.010s,PASSED
+selectElementFrom.selectByValue(fromAccount),Chrome 147.0.7727.138,,,13-05-2026 16:25:41,13-05-2026 16:25:42,0.335s,PASSED
+optionsToAccount = selectElementTo.getOptions(),Chrome 147.0.7727.138,,,13-05-2026 16:25:42,13-05-2026 16:25:42,0.267s,PASSED
+optionsToAccount.each({ java.lang.Object option -> ... }),Chrome 147.0.7727.138,,,13-05-2026 16:25:42,13-05-2026 16:25:42,0.054s,PASSED
+"toAccount = get(1).getAttribute(""value"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:42,13-05-2026 16:25:42,0.015s,PASSED
+selectElementTo.selectByValue(toAccount),Chrome 147.0.7727.138,,,13-05-2026 16:25:42,13-05-2026 16:25:42,0.315s,PASSED
+"click(findTestObject(""Web/Transfer/btn_submit""))",Chrome 147.0.7727.138,,,13-05-2026 16:25:42,13-05-2026 16:25:43,0.338s,PASSED
+"waitForElementPresent(findTestObject(""Web/Transfer/lbl_successTransfer""), 5)",Chrome 147.0.7727.138,,,13-05-2026 16:25:43,13-05-2026 16:25:43,0.682s,PASSED
+"verifyElementText(findTestObject(""Web/Transfer/lbl_successTransfer""), ""Transfer Complete!"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:43,13-05-2026 16:25:44,0.277s,PASSED
+"takeScreenshot(screenshotPath + ""TC TRF-01 Transfer Success.png"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:44,13-05-2026 16:25:44,0.359s,PASSED
+closeBrowser(),Chrome 147.0.7727.138,,,13-05-2026 16:25:44,13-05-2026 16:25:44,0.319s,PASSED
+"println(""TC-TRF-01 -Transfer Pass!"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:44,13-05-2026 16:25:44,0.001s,PASSED
+,,,,,,,
+Test Cases/Web/Transfer Found/TC TRF-02,Chrome 147.0.7727.138,,,13-05-2026 16:25:44,13-05-2026 16:25:57,12.178s,FAILED
+"common.WebHelper.login(""Haryadi01"", ""qwerty123"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:45,13-05-2026 16:25:51,6.037s,PASSED
+"click(findTestObject(""Web/Home/link_transfer""))",Chrome 147.0.7727.138,,,13-05-2026 16:25:51,13-05-2026 16:25:52,1.150s,PASSED
+"setText(findTestObject(""Web/Transfer/txt_amount""), """")",Chrome 147.0.7727.138,,,13-05-2026 16:25:52,13-05-2026 16:25:53,1.015s,PASSED
+driver = getWebDriver(),Chrome 147.0.7727.138,,,13-05-2026 16:25:53,13-05-2026 16:25:53,0.001s,PASSED
+selectElementFrom = new org.openqa.selenium.support.ui.Select(driver.findElement(org.openqa.selenium.By.cssSelector(#fromAccountId))),Chrome 147.0.7727.138,,,13-05-2026 16:25:53,13-05-2026 16:25:53,0.302s,PASSED
+selectElementTo = new org.openqa.selenium.support.ui.Select(driver.findElement(org.openqa.selenium.By.cssSelector(#toAccountId))),Chrome 147.0.7727.138,,,13-05-2026 16:25:53,13-05-2026 16:25:54,0.281s,PASSED
+"setText(findTestObject(""Web/Transfer/txt_amount""), """")",Chrome 147.0.7727.138,,,13-05-2026 16:25:54,13-05-2026 16:25:54,0.569s,PASSED
+options = selectElementFrom.getOptions(),Chrome 147.0.7727.138,,,13-05-2026 16:25:54,13-05-2026 16:25:54,0.264s,PASSED
+options.each({ java.lang.Object option -> ... }),Chrome 147.0.7727.138,,,13-05-2026 16:25:54,13-05-2026 16:25:54,0.053s,PASSED
+"fromAccount = get(0).getAttribute(""value"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:54,13-05-2026 16:25:54,0.008s,PASSED
+selectElementFrom.selectByValue(fromAccount),Chrome 147.0.7727.138,,,13-05-2026 16:25:54,13-05-2026 16:25:55,0.303s,PASSED
+optionsToAccount = selectElementTo.getOptions(),Chrome 147.0.7727.138,,,13-05-2026 16:25:55,13-05-2026 16:25:55,0.270s,PASSED
+optionsToAccount.each({ java.lang.Object option -> ... }),Chrome 147.0.7727.138,,,13-05-2026 16:25:55,13-05-2026 16:25:55,0.046s,PASSED
+"toAccount = get(1).getAttribute(""value"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:55,13-05-2026 16:25:55,0.010s,PASSED
+selectElementTo.selectByValue(toAccount),Chrome 147.0.7727.138,,,13-05-2026 16:25:55,13-05-2026 16:25:55,0.328s,PASSED
+"click(findTestObject(""Web/Transfer/btn_submit""))",Chrome 147.0.7727.138,,,13-05-2026 16:25:55,13-05-2026 16:25:56,0.343s,PASSED
+"waitForElementPresent(findTestObject(""Web/Transfer/lbl_failTransfer""), 5)",Chrome 147.0.7727.138,,,13-05-2026 16:25:56,13-05-2026 16:25:56,0.366s,PASSED
+"verifyElementText(findTestObject(""Web/Transfer/lbl_failTransfer""), ""The amount cannot be empty."")",Chrome 147.0.7727.138,,,13-05-2026 16:25:56,13-05-2026 16:25:57,0.516s,FAILED
+,,,,,,,
+Test Cases/Web/Loan/TC-Loan_01-Request Loan,Chrome 147.0.7727.138,,,13-05-2026 16:25:57,13-05-2026 16:26:08,11.806s,PASSED
+"common.WebHelper.login(""Haryadi01"", ""qwerty123"")",Chrome 147.0.7727.138,,,13-05-2026 16:25:57,13-05-2026 16:26:03,6.041s,PASSED
+"click(findTestObject(""Web/Home/link_loan""))",Chrome 147.0.7727.138,,,13-05-2026 16:26:03,13-05-2026 16:26:04,1.092s,PASSED
+driver = getWebDriver(),Chrome 147.0.7727.138,,,13-05-2026 16:26:04,13-05-2026 16:26:04,0.005s,PASSED
+selectElement = new org.openqa.selenium.support.ui.Select(driver.findElement(org.openqa.selenium.By.cssSelector(#fromAccountId))),Chrome 147.0.7727.138,,,13-05-2026 16:26:04,13-05-2026 16:26:04,0.498s,PASSED
+"setText(findTestObject(""Web/Loan/txt_loanAmount""), ""300"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:04,13-05-2026 16:26:05,0.618s,PASSED
+"setText(findTestObject(""Web/Loan/txt_downPayment""), ""150"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:05,13-05-2026 16:26:06,0.607s,PASSED
+options = selectElement.getOptions(),Chrome 147.0.7727.138,,,13-05-2026 16:26:06,13-05-2026 16:26:06,0.267s,PASSED
+options.each({ java.lang.Object option -> ... }),Chrome 147.0.7727.138,,,13-05-2026 16:26:06,13-05-2026 16:26:06,0.066s,PASSED
+"firstValue = get(0).getAttribute(""value"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:06,13-05-2026 16:26:06,0.011s,PASSED
+selectElement.selectByValue(firstValue),Chrome 147.0.7727.138,,,13-05-2026 16:26:06,13-05-2026 16:26:06,0.299s,PASSED
+"click(findTestObject(""Web/Loan/btn_submit""))",Chrome 147.0.7727.138,,,13-05-2026 16:26:06,13-05-2026 16:26:07,0.343s,PASSED
+"waitForElementPresent(findTestObject(""Web/Loan/lbl_statusLoan""), 5)",Chrome 147.0.7727.138,,,13-05-2026 16:26:07,13-05-2026 16:26:07,0.817s,PASSED
+"verifyElementText(findTestObject(""Web/Loan/lbl_statusLoan""), ""Approved"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:07,13-05-2026 16:26:08,0.279s,PASSED
+"takeScreenshot(screenshotPath + ""TC-01-getLoan.png"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:08,13-05-2026 16:26:08,0.359s,PASSED
+closeBrowser(),Chrome 147.0.7727.138,,,13-05-2026 16:26:08,13-05-2026 16:26:08,0.300s,PASSED
+"println(""TC-loan-01 Request loan Pass -Berhasil request loan"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:08,13-05-2026 16:26:08,0.001s,PASSED
+,,,,,,,
+Test Cases/Web/FindTransfer/TC-FTR_01 ByAmount,Chrome 147.0.7727.138,,,13-05-2026 16:26:08,13-05-2026 16:26:20,11.335s,PASSED
+"common.WebHelper.login(""Haryadi01"", ""qwerty123"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:09,13-05-2026 16:26:15,6.311s,PASSED
+"click(findTestObject(""Web/Home/link_findTransfer""))",Chrome 147.0.7727.138,,,13-05-2026 16:26:15,13-05-2026 16:26:16,1.080s,PASSED
+driver = getWebDriver(),Chrome 147.0.7727.138,,,13-05-2026 16:26:16,13-05-2026 16:26:16,0.002s,PASSED
+selectElement = new org.openqa.selenium.support.ui.Select(driver.findElement(org.openqa.selenium.By.cssSelector(#accountId))),Chrome 147.0.7727.138,,,13-05-2026 16:26:16,13-05-2026 16:26:16,0.399s,PASSED
+options = selectElement.getOptions(),Chrome 147.0.7727.138,,,13-05-2026 16:26:16,13-05-2026 16:26:17,0.268s,PASSED
+options.each({ java.lang.Object option -> ... }),Chrome 147.0.7727.138,,,13-05-2026 16:26:17,13-05-2026 16:26:17,0.072s,PASSED
+"firstValue = get(0).getAttribute(""value"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:17,13-05-2026 16:26:17,0.008s,PASSED
+selectElement.selectByValue(firstValue),Chrome 147.0.7727.138,,,13-05-2026 16:26:17,13-05-2026 16:26:17,0.302s,PASSED
+"setText(findTestObject(""Web/FindTransf/txt_amount""), ""150"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:17,13-05-2026 16:26:18,0.620s,PASSED
+"click(findTestObject(""Web/FindTransf/btn_findByAmount""))",Chrome 147.0.7727.138,,,13-05-2026 16:26:18,13-05-2026 16:26:18,0.329s,PASSED
+"waitForElementPresent(findTestObject(""Web/FindTransf/tbl_result""), 5)",Chrome 147.0.7727.138,,,13-05-2026 16:26:18,13-05-2026 16:26:19,0.704s,PASSED
+"verifyElementPresent(findTestObject(""Web/FindTransf/tbl_firstRow""), 5)",Chrome 147.0.7727.138,,,13-05-2026 16:26:19,13-05-2026 16:26:19,0.283s,PASSED
+"takeScreenshot(screenshotPath + ""TC - FTR By Amount.png"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:19,13-05-2026 16:26:19,0.343s,PASSED
+closeBrowser(),Chrome 147.0.7727.138,,,13-05-2026 16:26:19,13-05-2026 16:26:20,0.336s,PASSED
+"println(""TC-FTR-01 ByAmount Pass - Mencari transaksi menggunakan amount berhasil"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:20,13-05-2026 16:26:20,0.002s,PASSED
+,,,,,,,
+Test Cases/Web/FindTransfer/TC-FTR_02 ByDate,Chrome 147.0.7727.138,,,13-05-2026 16:26:20,13-05-2026 16:26:31,11.228s,PASSED
+"common.WebHelper.login(""Haryadi01"", ""qwerty123"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:20,13-05-2026 16:26:26,5.613s,PASSED
+"click(findTestObject(""Web/Home/link_findTransfer""))",Chrome 147.0.7727.138,,,13-05-2026 16:26:26,13-05-2026 16:26:27,1.126s,PASSED
+driver = getWebDriver(),Chrome 147.0.7727.138,,,13-05-2026 16:26:27,13-05-2026 16:26:27,0.007s,PASSED
+selectElement = new org.openqa.selenium.support.ui.Select(driver.findElement(org.openqa.selenium.By.cssSelector(#accountId))),Chrome 147.0.7727.138,,,13-05-2026 16:26:27,13-05-2026 16:26:27,0.407s,PASSED
+options = selectElement.getOptions(),Chrome 147.0.7727.138,,,13-05-2026 16:26:27,13-05-2026 16:26:27,0.272s,PASSED
+options.each({ java.lang.Object option -> ... }),Chrome 147.0.7727.138,,,13-05-2026 16:26:27,13-05-2026 16:26:27,0.066s,PASSED
+"firstValue = get(0).getAttribute(""value"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:27,13-05-2026 16:26:27,0.008s,PASSED
+selectElement.selectByValue(firstValue),Chrome 147.0.7727.138,,,13-05-2026 16:26:27,13-05-2026 16:26:28,0.296s,PASSED
+currentDate = common.WebHelper.getCurrentDate(),Chrome 147.0.7727.138,,,13-05-2026 16:26:28,13-05-2026 16:26:28,0.016s,PASSED
+"setText(findTestObject(""Web/FindTransf/txt_fromDate""), currentDate)",Chrome 147.0.7727.138,,,13-05-2026 16:26:28,13-05-2026 16:26:28,0.616s,PASSED
+"setText(findTestObject(""Web/FindTransf/txt_toDate""), currentDate)",Chrome 147.0.7727.138,,,13-05-2026 16:26:28,13-05-2026 16:26:29,0.607s,PASSED
+"click(findTestObject(""Web/FindTransf/btn_findByDateRange""))",Chrome 147.0.7727.138,,,13-05-2026 16:26:29,13-05-2026 16:26:29,0.320s,PASSED
+"waitForElementPresent(findTestObject(""Web/FindTransf/tbl_result""), 5)",Chrome 147.0.7727.138,,,13-05-2026 16:26:29,13-05-2026 16:26:30,0.699s,PASSED
+"verifyElementPresent(findTestObject(""Web/FindTransf/tbl_firstRow""), 5)",Chrome 147.0.7727.138,,,13-05-2026 16:26:30,13-05-2026 16:26:30,0.276s,PASSED
+"takeScreenshot(screenshotPath + ""TC-FindByDate Success.png"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:30,13-05-2026 16:26:31,0.355s,PASSED
+closeBrowser(),Chrome 147.0.7727.138,,,13-05-2026 16:26:31,13-05-2026 16:26:31,0.311s,PASSED
+"println(""TC-FTR-01 ByAmount Pass - Mencari transaksi menggunakan amount berhasil"")",Chrome 147.0.7727.138,,,13-05-2026 16:26:31,13-05-2026 16:26:31,0.001s,PASSED

@@ -28,7 +28,7 @@ WebUI.verifyElementVisible(findTestObject('Web/Home/lbl_accountoverview'))
 
 def currentUrl = WebUI.getUrl()
 assert currentUrl.contains('overview') : "Seharusnya kehalaman overview!"
-WebUI.takeScreenshot(GlobalVariable.screenshotPath + 'TC-01.png')
+WebUI.takeScreenshot(GlobalVariable.screenshotPath + 'TC-01-Login Valid.png')
 
 WebUI.closeBrowser()
 println "TC-1-Login_Valid Pass - Login Valid berhasil!"

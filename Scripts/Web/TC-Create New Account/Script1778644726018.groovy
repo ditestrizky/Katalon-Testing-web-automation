@@ -16,28 +16,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.support.ui.Select
 
-WebUI.openBrowser('https://parabank.parasoft.com')
-WebUI.click(findTestObject('Web/Register/link_register'))
 
-WebUI.setText(findTestObject('Web/Register/txt_firstname'),'haryadi')
-WebUI.setText(findTestObject('Web/Register/txt_lastname'),'haryanto')
-WebUI.setText(findTestObject('Web/Register/txt_address'),'terin 1')
-WebUI.setText(findTestObject('Web/Register/txt_city'),'Depok')
-WebUI.setText(findTestObject('Web/Register/txt_state'),'ina')
-WebUI.setText(findTestObject('Web/Register/txt_zipcode'),'11450')
-WebUI.setText(findTestObject('Web/Register/txt_phonenumber'),'628527323222')
-WebUI.setText(findTestObject('Web/Register/txt_ssn'),'12321311')
+CustomKeywords.'common.WebHelper.login'('Haryadi01','qwerty123')
 
-WebUI.setText(findTestObject('Web/Register/txt_username'),'Haryadi01')
-WebUI.setText(findTestObject('Web/Register/txt_password'),'qwerty123')
-WebUI.setText(findTestObject('Web/Register/txt_confirmpassword'),'qwerty123')
+WebUI.click(findTestObject('Web/Home/link_createAccount'))
 
-WebUI.click(findTestObject('Web/Register/btn_register'))
+WebUI.selectOptionByValue(findTestObject('Web/OpenAccount/drp_typeAccount'),'1',false)
+//WebUI.selectOptionByLabel(findTestObject('Web/OpenAccount/drp_toAccount'),'SAVINGS',false) digunakan jika menggunakan value
 
-WebUI.waitForElementPresent(findTestObject('Web/Register/lbl_failRegister'),5)
-WebUI.verifyElementText(findTestObject('Web/Register/lbl_failRegister'),'This username already exists.')
-WebUI.takeScreenshot(GlobalVariable.screenshotPath + 'TC-04-Register Invalid.png')
+def driver = DriverFactory.getWebDriver()
+def selectElement = new Select(driver.findElement(By.cssSelector('#fromAccountId')))
+
+List<WebElement> options = selectElement.getOptions()
+options.each{ option->
+	println "Value:${option.getAttribute('value')} - Label: ${option.getText()}"
+}
+
+def firstValue= options.get(0).getAttribute('value')
+selectElement.selectByValue(firstValue)
+
+WebUI.click(findTestObject('Web/OpenAccount/btn_submit'))
+
+WebUI.verifyElementText(findTestObject('Web/OpenAccount/lbl_successCreateAccount'),'Account Opened!')
+
+WebUI.takeScreenshot(GlobalVariable.screenshotPath +'TC CreateAccount.png')
 
 WebUI.closeBrowser()
-println "TC-04-Register_Invalid Pass - Register Invalid berhasil!"
+println "Test Case Create Account success!"

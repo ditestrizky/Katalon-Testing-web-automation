@@ -17,6 +17,9 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import com.kms.katalon.core.annotation.Keyword
 
 import internal.GlobalVariable
 
@@ -33,5 +36,20 @@ public class WebHelper {
 		WebUI.setText(findTestObject('Web/Login/txt_username'),username)
 		WebUI.setText(findTestObject('Web/Login/txt_password'),password)
 		WebUI.click(findTestObject('Web/Login/btn_login'))
+	}
+	String getCurrentDate (String format="MM-dd-yyyy") {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern(format)
+		LocalDateTime now = LocalDateTime.now()
+		return dtf.format(now)
+	}
+	def getFutureDate(int days,String format ="MM-dd-yyyy") {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern(format)
+		LocalDateTime future = LocalDateTime.now().plusDays(days)
+		return dtf.format(future)
+	}
+	def getPastDate(int days,String format="MM-dd-yyyy") {
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern(format)
+		LocalDateTime past = LocalDateTime.now().plusDays(days)
+		return dtf.format(past)
 	}
 }

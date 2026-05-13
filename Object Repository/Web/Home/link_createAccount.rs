@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>tbl_firstRow</name>
+   <name>link_createAccount</name>
    <tag></tag>
-   <elementGuidId>0bc1f573-7384-4fa8-8052-e5192834ecf5</elementGuidId>
+   <elementGuidId>fa3e1ab7-0951-4c94-9f1b-b0fbf3fd6e2c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#transactionBody tr</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value>a[href='openaccount.htm']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

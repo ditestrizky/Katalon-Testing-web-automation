@@ -42,5 +42,7 @@ WebUI.verifyElementVisible(findTestObject('Web/Register/lbl_registerberhasil'))
 def value = WebUI.getText(findTestObject('Web/Register/lbl_registerberhasil'))
 assert value.contains('Welcome') : "Seharusnya kehalaman Pendaftaran berhasil!"
 
+WebUI.takeScreenshot(GlobalVariable.screenshotPath + 'TC-03-Register Valid.png')
+
 WebUI.closeBrowser()
-println "TC-04-Register_Valid Pass - Register Valid berhasil!"
+println "TC-03-Register_Valid Pass - Register Valid berhasil!"

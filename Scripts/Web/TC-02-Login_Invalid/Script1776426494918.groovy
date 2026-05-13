@@ -29,6 +29,7 @@ WebUI.verifyElementText(findTestObject('Web/Login/lbl_faillogin'),'The username 
 
 def currentUrl = WebUI.getUrl()
 assert currentUrl.contains('login') : "Tetap dihalaman login!"
+WebUI.takeScreenshot(GlobalVariable.screenshotPath + 'TC-02-Login Invalid.png')
 
 WebUI.closeBrowser()
 println "TC-02-Login_Invalid Pass - Login Invalid berhasil!"

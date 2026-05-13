@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>tbl_firstRow</name>
+   <name>lbl_successCreateAccount</name>
    <tag></tag>
-   <elementGuidId>0bc1f573-7384-4fa8-8052-e5192834ecf5</elementGuidId>
+   <elementGuidId>10bb8549-4959-4dcf-81df-e20a1ebef2ee</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#transactionBody tr</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value>#openAccountResult h1.title</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

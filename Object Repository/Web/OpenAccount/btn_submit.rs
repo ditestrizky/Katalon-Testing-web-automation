@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>tbl_firstRow</name>
+   <name>btn_submit</name>
    <tag></tag>
-   <elementGuidId>0bc1f573-7384-4fa8-8052-e5192834ecf5</elementGuidId>
+   <elementGuidId>5b177e53-183f-44e1-a752-7c4c36e98c04</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#transactionBody tr</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>CSS</key>
+         <value>input[value='Open New Account']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
